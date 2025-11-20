@@ -1,7 +1,13 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Features from './components/Features'
+import Comparison from './components/Comparison'
+import Integrations from './components/Integrations'
+import Differentiators from './components/Differentiators'
+import HowItWorks from './components/HowItWorks'
+import Personalization from './components/Personalization'
+import Quality from './components/Quality'
 import CTA from './components/CTA'
+import FAQ from './components/FAQ'
 
 function App() {
   return (
@@ -14,17 +20,23 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Features />
+        <Integrations />
+        <Comparison />
+        <Differentiators />
+        <HowItWorks />
+        <Personalization />
+        <Quality />
         <CTA />
+        <FAQ />
       </main>
 
-      <footer className="relative border-t border-white/10 mt-10">
+      <footer className="relative border-top border-white/10 mt-10">
         <div className="mx-auto max-w-7xl px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-          <p>© {new Date().getFullYear()} Dreep AI. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} dreep (VH2O Ltd.). All rights reserved. We never sell personal data.</p>
           <div className="flex items-center gap-5">
-            <a href="#" className="hover:text-white">Privacy</a>
-            <a href="#" className="hover:text-white">Terms</a>
-            <a href="#" className="hover:text-white">Status</a>
+            <a href="https://dreep.ai/terms" className="hover:text-white">Terms & Conditions</a>
+            <a href="https://dreep.ai/privacy" className="hover:text-white">Privacy Policy</a>
+            <a href="https://dreep.ai/contact" className="hover:text-white">Contact</a>
           </div>
         </div>
       </footer>

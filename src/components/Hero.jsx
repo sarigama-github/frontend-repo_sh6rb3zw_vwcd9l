@@ -16,33 +16,31 @@ export default function Hero() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/80 backdrop-blur">
                 <span className="size-1.5 rounded-full bg-gradient-to-tr from-violet-400 to-amber-300" />
-                Introducing the next-gen voice AI platform
+                dreep — adaptive nutrition
               </div>
               <h1 className="mt-5 text-4xl md:text-6xl font-semibold tracking-tight text-white">
-                The fastest way to build an AI voice agent
+                dreep – Feel Stronger, Sharper, and Years Ahead
               </h1>
               <p className="mt-5 text-base md:text-lg text-slate-300 max-w-xl">
-                Design, deploy, and scale your voice AI in minutes. Natural conversations, realtime streaming, and tools that just work.
+                dreep turns your sleep, training, and diet data into a precise daily vitamin shot, so your body always gets exactly what it needs.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <a href="#" className="inline-flex items-center justify-center rounded-xl bg-white text-slate-900 px-5 py-3 text-sm font-semibold hover:bg-slate-100 transition-colors">
-                  Get started free
+                  Reserve beta access - $1 refundable
                 </a>
-                <a href="#features" className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white px-5 py-3 text-sm font-semibold hover:bg-white/10 transition-colors">
-                  See how it works
+                <a href="#integrations" className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white px-5 py-3 text-sm font-semibold hover:bg-white/10 transition-colors">
+                  Join waitlist
                 </a>
               </div>
 
-              <div className="mt-8 flex items-center gap-6 text-xs text-slate-300/80">
-                <div className="flex -space-x-2">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <div key={i} className="size-7 rounded-full bg-gradient-to-tr from-violet-500 via-fuchsia-500 to-amber-400 ring-2 ring-slate-900" />
-                  ))}
-                </div>
-                <span>Trusted by 1,000+ teams</span>
-                <span>•</span>
-                <span>14-day free trial</span>
+              <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs text-slate-300/90 max-w-lg">
+                <div className="rounded-lg border border-white/10 bg-white/5 px-3 py-2">Apple Health</div>
+                <div className="rounded-lg border border-white/10 bg-white/5 px-3 py-2">Oura</div>
+                <div className="rounded-lg border border-white/10 bg-white/5 px-3 py-2">WHOOP</div>
+                <div className="rounded-lg border border-white/10 bg-white/5 px-3 py-2">End-to-end encryption</div>
+                <div className="rounded-lg border border-white/10 bg-white/5 px-3 py-2">GMP + 3rd-party tested</div>
+                <div className="rounded-lg border border-white/10 bg-white/5 px-3 py-2">NIH guardrails</div>
               </div>
             </motion.div>
           </div>
